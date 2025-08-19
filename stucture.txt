@@ -1,0 +1,308 @@
+cc-plume-royale/
+├── public/
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── avatars/
+│   │   │   │   ├── child1.png
+│   │   │   │   ├── child2.png
+│   │   │   │   └── default.png
+│   │   │   ├── badges/
+│   │   │   │   ├── gold.png
+│   │   │   │   ├── silver.png
+│   │   │   │   └── bronze.png
+│   │   │   ├── books/
+│   │   │   │   ├── math.jpg
+│   │   │   │   ├── french.jpg
+│   │   │   │   └── science.jpg
+│   │   │   ├── icons/
+│   │   │   │   ├── math.svg
+│   │   │   │   ├── reading.svg
+│   │   │   │   └── science.svg
+│   │   │   └── logo.png
+│   │   ├── videos/
+│   │   │   ├── intro.mp4
+│   │   │   └── sample-lesson.mp4
+│   │   └── fonts/
+│   │       ├── FredokaOne-Regular.ttf
+│   │       └── OpenSans-Variable.ttf
+│   └── favicon.ico
+├── src/
+│   ├── api/
+│   │   ├── 
+│   │   ├── children.js
+│   │   ├── educationalResources.js
+│   │   ├── games.js
+│   │   ├── index.js
+│   │   ├── interceptors.js
+│   │   ├── payments.js
+│   │   ├── quizzes.js
+│   │   ├── subscriptions.js
+│   │   ├── tutoring.js
+│   │   └── users.js
+│   ├── components/
+│   │   ├── auth/
+│   │   │   ├── AuthForm.jsx
+│   │   │   ├── ForgotPasswordForm.jsx
+│   │   │   ├── LoginForm.jsx
+│   │   │   ├── RegisterForm.jsx
+│   │   │   ├── ResetPasswordForm.jsx
+│   │   │   └── SocialAuthButtons.jsx
+│   │   ├── common/
+│   │   │   ├── Avatar.jsx
+│   │   │   ├── Badge.jsx
+│   │   │   ├── Breadcrumbs.jsx
+│   │   │   ├── 
+│   │   │   ├── Card.jsx
+│   │   │   ├── Dropdown.jsx
+│   │   │   ├── EmptyState.jsx
+│   │   │   ├── ErrorMessage.jsx
+│   │   │   ├── Icon.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── Loader.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   ├── Pagination.jsx
+│   │   │   ├── ProgressBar.jsx
+│   │   │   ├── SearchInput.jsx
+│   │   │   ├── Select.jsx
+│   │   │   ├── Tab.jsx
+│   │   │   ├── Table.jsx
+│   │   │   ├── Toast.jsx
+│   │   │   └── Tooltip.jsx
+│   │   ├── dashboard/
+│   │   │   ├── ActivityFeed.jsx
+│   │   │   ├── ProgressChart.jsx
+│   │   │   ├── QuickActions.jsx
+│   │   │   ├── RecentResources.jsx
+│   │   │   ├── StatsCard.jsx
+│   │   │   └── WelcomeBanner.jsx
+│   │   ├── educational/
+│   │   │   ├── ArticleViewer.jsx
+│   │   │   ├── DownloadButton.jsx
+│   │   │   ├── PdfViewer.jsx
+│   │   │   ├── ResourceCard.jsx
+│   │   │   ├── ResourceGrid.jsx
+│   │   │   ├── ResourceList.jsx
+│   │   │   ├── ResourceTabs.jsx
+│   │   │   ├── SubjectFilter.jsx
+│   │   │   └── VideoPlayer.jsx
+│   │   ├── games/
+│   │   │   ├── MathGame/
+│   │   │   │   ├── MathGame.jsx
+│   │   │   │   ├── MathProblem.jsx
+│   │   │   │   └── MathResults.jsx
+│   │   │   ├── MemoryGame/
+│   │   │   │   ├── MemoryCard.jsx
+│   │   │   │   ├── MemoryGame.jsx
+│   │   │   │   └── MemoryScore.jsx
+│   │   │   ├── PuzzleGame/
+│   │   │   │   ├── PuzzleBoard.jsx
+│   │   │   │   ├── PuzzleGame.jsx
+│   │   │   │   └── PuzzlePiece.jsx
+│   │   │   └── GamesLayout.jsx
+│   │   ├── layout/
+│   │   │   ├── 
+│   │   │   ├── AppLayout.jsx
+│   │   │   ├──
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── MainNav.jsx
+│   │   │   ├── MobileNav.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── UserDropdown.jsx
+│   │   ├── payments/
+│   │   │   ├── BillingAddressForm.jsx
+│   │   │   ├── InvoiceList.jsx
+│   │   │   ├── PaymentMethod.jsx
+│   │   │   ├── PricingCard.jsx
+│   │   │   ├── SubscriptionCard.jsx
+│   │   │   ├── SubscriptionForm.jsx
+│   │   │   └── SubscriptionStatus.jsx
+│   │   ├── quizzes/
+│   │   │   ├── QuizCard.jsx
+│   │   │   ├── QuizComplete.jsx
+│   │   │   ├── QuizQuestion.jsx
+│   │   │   ├── QuizResults.jsx
+│   │   │   ├── QuizStart.jsx
+│   │   │   └── QuizTimer.jsx
+│   │   ├── shop/
+│   │   │   ├── AddToCart.jsx
+│   │   │   ├── CartDrawer.jsx
+│   │   │   ├── CartItem.jsx
+│   │   │   ├── CheckoutSteps.jsx
+│   │   │   ├── ProductCard.jsx
+│   │   │   ├── ProductGallery.jsx
+│   │   │   ├── ProductGrid.jsx
+│   │   │   ├── ProductInfo.jsx
+│   │   │   └── ProductReviews.jsx
+│   │   └── tutoring/
+│   │       ├── Calendar.jsx
+│   │       ├── SessionCard.jsx
+│   │       ├── TutorCard.jsx
+│   │       ├── TutorFilter.jsx
+│   │       ├── TutorList.jsx
+│   │       └── TutorProfile.jsx
+│   ├── config/
+│   │   ├── constants.js
+│   │   ├── 
+│   │   └── theme.js
+│   ├── contexts/
+│   │   ├── 
+│   │   ├── CartContext.js
+│   │   ├── GameContext.js
+│   │   ├── QuizContext.js
+│   │   └── UiContext.js
+│   ├── data/
+│   │   ├── mocks/
+│   │   │   ├── badges.js
+│   │   │   ├── children.js
+│   │   │   ├── educationalResources.js
+│   │   │   ├── games.js
+│   │   │   ├── invoices.js
+│   │   │   ├── products.js
+│   │   │   ├── quizzes.js
+│   │   │   ├── subscriptions.js
+│   │   │   ├── tutors.js
+│   │   │   └── users.js
+│   │   └── services/
+│   │       ├── authService.js
+│   │       ├── cartService.js
+│   │       ├── childService.js
+│   │       ├── gameService.js
+│   │       ├── paymentService.js
+│   │       ├── quizService.js
+│   │       ├── resourceService.js
+│   │       ├── subscriptionService.js
+│   │       ├── tutoringService.js
+│   │       └── userService.js
+│   ├── hooks/
+│   │   
+│   │   ├── useCart.js
+│   │   ├── useChildren.js
+│   │   ├── useEducationalResources.js
+│   │   ├── useForm.js
+│   │   ├── useGames.js
+│   │   ├── useLocalStorage.js
+│   │   ├── usePayments.js
+│   │   ├── useQuizzes.js
+│   │   ├── useSubscriptions.js
+│   │   ├── useTutoring.js
+│   │   └── useUser.js
+│   ├── pages/
+│   │   ├── admin/
+│   │   │   ├──
+│   │   │   ├── EducationalResources/
+│   │   │   │   ├── CreateResource.jsx
+│   │   │   │   ├── EditResource.jsx
+│   │   │   │   └── ListResources.jsx
+│   │   │   ├── Games/
+│   │   │   │   ├── CreateGame.jsx
+│   │   │   │   └── ListGames.jsx
+│   │   │   ├── Quizzes/
+│   │   │   │   ├── CreateQuiz.jsx
+│   │   │   │   └── ListQuizzes.jsx
+│   │   │   ├── Settings/
+│   │   │   │   ├── General.jsx
+│   │   │   │   └── Payment.jsx
+│   │   │   ├── Subscriptions/
+│   │   │   │   ├── ListSubscriptions.jsx
+│   │   │   │   └── Stats.jsx
+│   │   │   ├── Tutors/
+│   │   │   │   ├── ApproveTutors.jsx
+│   │   │   │   └── ListTutors.jsx
+│   │   │   └── Users/
+│   │   │       ├── CreateUser.jsx
+│   │   │       ├── EditUser.jsx
+│   │   │       └── ListUsers.jsx
+│   │   ├── auth/
+│   │   │   ├── ForgotPassword.jsx
+│   │   │   ├── 
+│   │   │   ├── Register.jsx
+│   │   │   └── ResetPassword.jsx
+│   │   ├── child/
+│   │   │   ├── 
+│   │   │   ├── Games/
+│   │   │   │   ├── MathGame.jsx
+│   │   │   │   ├── MemoryGame.jsx
+│   │   │   │   └── PuzzleGame.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   ├── Quizzes/
+│   │   │   │   ├── Completed.jsx
+│   │   │   │   └── PlayQuiz.jsx
+│   │   │   └── Resources/
+│   │   │       ├── Article.jsx
+│   │   │       ├── PdfViewer.jsx
+│   │   │       └── Video.jsx
+│   │   ├── parent/
+│   │   │   ├── AddChild.jsx
+│   │   │   ├── Billing/
+│   │   │   │   ├── Invoices.jsx
+│   │   │   │   └── PaymentMethods.jsx
+│   │   │   ├── Children/
+│   │   │   │   ├── ChildProgress.jsx
+│   │   │   │   └── ListChildren.jsx
+│   │   │   ├── 
+│   │   │   ├── Profile.jsx
+│   │   │   ├── Settings.jsx
+│   │   │   ├── Shop/
+│   │   │   │   ├── Cart.jsx
+│   │   │   │   ├── Checkout.jsx
+│   │   │   │   ├── Orders.jsx
+│   │   │   │   └── Products.jsx
+│   │   │   └── Subscriptions/
+│   │   │       ├── ChangePlan.jsx
+│   │   │       └── CurrentPlan.jsx
+│   │   ├── shared/
+│   │   │   ├── EducationalResources/
+│   │   │   │   ├── List.jsx
+│   │   │   │   └── View.jsx
+│   │   │   ├── Games/
+│   │   │   │   └── List.jsx
+│   │   │   ├── Quizzes/
+│   │   │   │   └── List.jsx
+│   │   │   └── Tutors/
+│   │   │       ├── BookSession.jsx
+│   │   │       └── List.jsx
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Home.jsx
+│   │   ├── NotFound.jsx
+│   │   └── Pricing.jsx
+│   ├── router/
+│   │   ├── 
+│   │   ├── AdminRouter.jsx
+│   │   ├── ChildRouter.jsx
+│   │   ├── ParentRouter.jsx
+│   │   └── PublicRouter.jsx
+│   ├── stores/
+│   │   ├── authStore.js
+│   │   ├── cartStore.js
+│   │   ├── childStore.js
+│   │   ├── gameStore.js
+│   │   ├── paymentStore.js
+│   │   ├── quizStore.js
+│   │   ├── resourceStore.js
+│   │   ├── subscriptionStore.js
+│   │   ├── tutoringStore.js
+│   │   └── uiStore.js
+│   ├── utils/
+│   │   ├── auth.js
+│   │   ├── date.js
+│   │   ├── formatters.js
+│   │   ├── http.js
+│   │   ├── notifications.js
+│   │   ├── permissions.js
+│   │   ├── storage.js
+│   │   └── validation.js
+│   ├── App.jsx
+│   └── main.jsx
+├── .env
+├── .env.local
+├── .eslintrc.js
+├── .gitignore
+├── .prettierrc
+├── index.html
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+└── vite.config.js
